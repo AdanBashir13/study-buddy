@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f9;
+  background-color: lightgray;
 }
 
 a {
@@ -12,22 +12,32 @@ a {
 }
 
 header {
-  background-color: rgb(33, 172, 33);
-  padding: 1rem;
+  background-color: rgb(0, 218, 98);
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+header nav {
+  display: flex;
+}
+
 header nav a {
-  margin: 0 1rem;
+  margin: 0 16px;
   color: white;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: gold;
+  text-decoration: underline;
 }
 
 footer {
-  background-color: #4CAF50;
-  padding: 1rem;
+  background-color: darkgreen;
+  padding: 16px;
   text-align: center;
   color: white;
   position: fixed;
@@ -36,9 +46,11 @@ footer {
 }
 
 main {
-  padding: 1rem;
+  padding: 16px;
   margin-bottom: 60px;
 }
+
+
 
 .home-container {
   width: 100%;
@@ -49,7 +61,7 @@ main {
 
 .hero-section {
   padding: 100px 20px;
-  background: mediumseagreen;
+  background: rgb(60, 179, 113);
   color: white;
   text-align: center;
   margin-bottom: 30px;
@@ -75,8 +87,8 @@ main {
 
 .cta-button {
   background-color: white;
-  color: mediumseagreen;
-  border: 2px solid mediumseagreen;
+  color: rgb(60, 179, 113);
+  border: 2px solid rgb(60, 179, 113);
   padding: 15px 30px;
   font-size: 20px;
   border-radius: 5px;
@@ -85,7 +97,7 @@ main {
 }
 
 .cta-button:hover {
-  background-color: mediumseagreen;
+  background-color: rgb(137, 179, 60);
   color: white;
 }
 
@@ -138,7 +150,7 @@ main {
 .feature-icon,
 .step-icon {
   margin-bottom: 15px;
-  color: mediumseagreen;
+  color: rgb(60, 179, 113);
   font-size: 50px;
 }
 
@@ -154,7 +166,7 @@ main {
 }
 
 .cta-section {
-  background-color: mediumseagreen;
+  background-color:rgb(60, 179, 113);
   color: white;
   padding: 60px 20px;
   border-radius: 8px;

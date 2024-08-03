@@ -1,15 +1,14 @@
-// src/App.js
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
+import AppRouter from './routes';
 
 function App() {
     return (
         <>
             <Header />
             <main>
-                <Home />
+                <AppRouter />
             </main>
             <Footer />
         </>
