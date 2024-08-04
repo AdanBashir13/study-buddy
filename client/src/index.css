@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: lightgray;
+  background-color: whitesmoke;
 }
 
 a {
@@ -29,11 +29,11 @@ header nav a {
   color: white;
   font-weight: bold;
   transition: color 0.3s;
+  font-size: 20px;
 }
 
 header nav a:hover {
   color: gold;
-  text-decoration: underline;
 }
 
 .footer {
@@ -319,7 +319,7 @@ main {
 }
 
 .form-container button:hover {
-  background-color: rgb(120, 150, 12);
+  background-color: rgb(137, 179, 60);
 }
 
 .sessions-list h2 {
@@ -423,4 +423,129 @@ main {
   font-style: italic;
   margin: 10px 0;
   color: #555;
+}
+
+
+
+.group-page {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.group-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.group-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.group-header p {
+  font-size: 16px;
+  color: gray;
+}
+
+.why-join {
+  margin: 30px 0;
+}
+
+.why-join h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.importance-section {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.importance-section h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.importance-section p {
+  font-size: 14px;
+  color: gray;
+}
+
+.form-container {
+  margin-bottom: 30px;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: rgb(137, 179, 60);
+}
+
+.groups-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.groups-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.groups-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.groups-list h3 {
+  margin: 0 0 5px;
+}
+
+.groups-list p {
+  margin: 5px 0;
+  color: gray;
+}
+
+.join-button {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background-color: darkblue;
 }
