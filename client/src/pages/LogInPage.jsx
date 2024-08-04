@@ -5,7 +5,6 @@ const LoginPage = () => {
     const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        // Handle login logic here
         console.log('Logging in with', email, password);
     };
 
@@ -27,7 +26,7 @@ const LoginPage = () => {
                 />
                 <button onClick={handleLogin}>Login</button>
                 <div className="signup-link">
-                    <p>Don't have an account? <a href="/signup">Sign up here</a></p>
+                    <p>Don't have an account? <a href="/register">Sign up here</a></p>
                 </div>
             </div>
         </div>

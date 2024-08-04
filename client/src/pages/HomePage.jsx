@@ -1,9 +1,15 @@
-// src/pages/Home.js
 import React from 'react';
-import SussieImage from './images/sussie.jpg'
-import KevinImage from './images/kevin.jpg'
+import { useNavigate } from 'react-router-dom';
+import SussieImage from './images/sussie.jpg';
+import KevinImage from './images/kevin.jpg';
 
 const Home = () => {
+    const navigate = useNavigate();
+
+    const handleSignUp = () => {
+        navigate('/register'); 
+    };
+
     return (
         <div className="home-container">
             <header className="hero-section">
@@ -13,7 +19,7 @@ const Home = () => {
                         Your ultimate tool for managing study schedules and tracking progress.
                         Study Buddy helps you stay organized, collaborate with peers, and enhance your learning experience.
                     </p>
-                    <button className="cta-button">Get Started</button>
+                    <button className="cta-button" onClick={handleSignUp}>Get Started</button>
                 </div>
             </header>
 
@@ -62,12 +68,12 @@ const Home = () => {
             <section className="testimonials">
                 <h2>What Our Users Say</h2>
                 <div className="testimonial">
-                    <img src= {SussieImage} alt="sussie smith" className="testimonial-image" />
-                    <p>"Study Bddy has completely transformed the way I study. I am more organized and productive than ever!"</p>
-                    <p>- Sussie Smith </p>
+                    <img src={SussieImage} alt="Sussie Smith" className="testimonial-image" />
+                    <p>"Study Buddy has completely transformed the way I study. I am more organized and productive than ever!"</p>
+                    <p>- Sussie Smith</p>
                 </div>
                 <div className="testimonial">
-                    <img src= {KevinImage} alt="kevin conner" className="testimonial-image" />
+                    <img src={KevinImage} alt="Kevin Conner" className="testimonial-image" />
                     <p>"The collaboration feature is amazing. I love being able to study with my friends and keep each other motivated."</p>
                     <p>- Kevin Conner</p>
                 </div>
@@ -76,7 +82,7 @@ const Home = () => {
             <section className="cta-section">
                 <h2>Ready to Get Started?</h2>
                 <p>Join Study Buddy today and take your study habits to the next level.</p>
-                <button className="cta-button">Sign Up Now</button>
+                <button className="cta-button" onClick={handleSignUp}>Sign Up Now</button>
             </section>
         </div>
     );
