@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import SchedulePage from './pages/SchedulePage';
+import ProgressPage from './pages/ProgressPage';
 import ErrorPage from './pages/ErrorPage';
 
 const AppRouter = () => (
@@ -10,7 +11,8 @@ const AppRouter = () => (
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/schedule" element={<SchedulePage />} />
-        <Route path="*" element={<ErrorPage />} /> 
+        <Route path="/progress" element={<ProgressPage />} />
+        <Route path="*" element={<ErrorPage />} />
     </Routes>
 );
 
