@@ -549,3 +549,128 @@ main {
 .join-button:hover {
   background-color: darkblue;
 }
+
+
+
+.collaboration-page {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.collaboration-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.collaboration-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.collaboration-header p {
+  font-size: 16px;
+  color: gray;
+}
+
+.benefits {
+  margin: 30px 0;
+}
+
+.benefits h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.benefit-section {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.benefit-section h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.benefit-section p {
+  font-size: 14px;
+  color: gray;
+}
+
+.form-container {
+  margin-bottom: 30px;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: darkgreen;
+}
+
+.collaborations-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.collaborations-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.collaborations-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.collaborations-list h3 {
+  margin: 0 0 5px;
+}
+
+.collaborations-list p {
+  margin: 5px 0;
+  color: gray;
+}
+
+.join-button {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background-color: darkblue;
+}
