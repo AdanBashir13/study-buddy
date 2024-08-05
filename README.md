@@ -2,7 +2,7 @@
 
 1. Clone the repository:
 ```
-git clone https://github.com/ --depth 1 &&  cd study-buddy
+git clone https://github.com/AdanBashir13/study-buddy --depth 1 &&  cd study-buddy
 ```
 
 2. Install the dependencies:
