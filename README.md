@@ -22,6 +22,11 @@ python server/seed.py
 ```
 
 4. Run the app now:
+```
+gunicorn -b 127.0.0.1:5555 --chdir ./server manage:app
+or
+flask run
+```
 
 **Endpoints:**
 
