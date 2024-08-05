@@ -8,9 +8,9 @@ from app.extensions import db
 api = Blueprint("api", __name__)
 
 
-@api.route('/')
+@api.route('/test')
 def index():
-    return f'<h1>Welcome to the studdy buddy api</h1>'
+    return jsonify({"message": "Welcome to the studdy buddy api"})
 
 @api.route("/register", methods=["POST"])
 def register():
