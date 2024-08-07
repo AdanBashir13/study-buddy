@@ -1,1 +1,79 @@
-Single-database configuration for Flask.
+# Study Buddy - Backend
+
+## Overview
+
+**Study Buddy** is a full-stack web application designed to help students manage their study schedules, track their progress, and collaborate with peers. This repository contains the backend code developed with Flask, SQLAlchemy, and JWT for user authentication, providing a robust server-side API to support the frontend application.
+
+## Authors
+- Adan Bashir
+- **Collaborator**: Raymond Korir
+
+## Features
+
+- User registration and login with JWT authentication.
+- Create, view, update, and delete study schedules.
+- Track study session progress with the ability to mark sessions as completed.
+- Join and manage study groups.
+- Initial data setup for testing purposes.
+
+## Technologies Used
+
+- **Flask**: A lightweight web framework for Python.
+- **SQLAlchemy**: An ORM for database interactions.
+- **Flask-JWT-Extended**: For implementing JWT authentication.
+- **Flask-CORS**: Used for handling cross-origin requests between the frontend and backend.
+- **SQLite**: A lightweight database for storing application data.
+- **Flask-Migrate**: For handling database migrations.
+
+## Getting Started
+
+### Prerequisites
+
+- Python (version >= 3.6)
+- Flask
+- Flask extensions (Flask-SQLAlchemy, Flask-Migrate, Flask-JWT-Extended, Flask-CORS)
+
+### Installation
+
+1. **Clone the repository:**
+
+    `git clone https://github.com/yourusername/study-buddy-backend.git`
+
+2. **Navigate to the project directory:**
+
+    `cd study-buddy/backend`
+
+3. **Install the dependencies:**
+
+    `pipenv install`
+
+### Running the Application
+
+1. **Set up the database:**
+
+    `flask db init`
+    `flask db migrate`
+    `flask db upgrade`
+
+
+2. **Start the server:**
+
+    `python app.py`
+
+3. Open your web browser and go to `http://localhost:5555`.
+
+### API Integration
+
+The backend API is designed to interact with the frontend application. Ensure that the frontend is configured to make requests to the correct API endpoints and that CORS is properly set up to allow cross-origin requests.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or issues regarding this code, please contact me at imdedsec1120@gmail.com.
