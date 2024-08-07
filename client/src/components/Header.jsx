@@ -1,10 +1,11 @@
 import React from 'react';
 import NavBar from './Navbar';
+import StudyBuddyLogo from '../pages/images/logo.png';
 
 const Header = () => {
     return (
-        <header>
-            <h1>Study Buddy</h1>
+        <header className="header">
+            <img src={StudyBuddyLogo} alt="Study Buddy Logo" className="logo-image" />
             <NavBar />
         </header>
     );

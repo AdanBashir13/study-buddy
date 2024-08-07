@@ -11,6 +11,8 @@ a {
   font-size: 20px;
 }
 
+
+/* Header and Navigation components styles */
 header {
   background-color: rgb(0, 218, 98);
   padding: 16px;
@@ -21,6 +23,11 @@ header {
 
 header nav {
   display: flex;
+}
+
+.logo-image {
+  height: 120px;
+  width: 180px;
 }
 
 header nav a {
@@ -35,6 +42,8 @@ header nav a:hover {
   color: gold;
 }
 
+
+/* Footer component styles */
 .footer {
   background-color: rgb(0, 218, 98);
   color: white;
@@ -89,16 +98,13 @@ header nav a:hover {
   font-size: 14px;
 }
 
-
-
 main {
   padding: 16px;
   margin-bottom: 60px;
 }
 
 
-
-
+/* HomePage styles */
 .home-container {
   width: 100%;
   padding: 0;
@@ -136,7 +142,6 @@ main {
   padding: 15px 30px;
   font-size: 20px;
   border-radius: 5px;
-  cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -239,7 +244,7 @@ main {
 
 .testimonial {
   max-width: 600px;
-  margin: 20px auto; 
+  margin: 20px auto;
   font-size: 20px;
   color: dimgray;
 }
@@ -250,6 +255,13 @@ main {
   padding: 60px 20px;
   border-radius: 8px;
   text-align: center;
+}
+
+.feature-icon,
+.step-icon {
+    margin-bottom: 15px;
+    color: rgb(60, 179, 113);
+    font-size: 50px;
 }
 
 .cta-section h2 {
@@ -270,6 +282,8 @@ main {
   margin-bottom: 15px;
 }
 
+
+/* SchedlePage styles*/
 .schedule-page {
   padding: 20px;
   background-color: white;
@@ -291,7 +305,6 @@ main {
 
 .schedule-header p {
   font-size: 16px;
-  color: gray;
 }
 
 .info-container {
@@ -374,6 +387,7 @@ main {
 
 .sessions-list h3 {
   margin: 0 0 5px;
+  color: black;
 }
 
 .sessions-list p {
@@ -382,334 +396,141 @@ main {
 }
 
 
+/* ProgressPage styles */
 .progress-page {
-  max-width: 1800px;
-  margin: 0 auto;
   padding: 20px;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
-.progress-header {
+.progress-page .progress-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.progress-header h1 {
+.progress-page h1 {
   font-size: 32px;
-  margin-bottom: 10px;
 }
 
-.progress-header p {
-  font-size: 16px;
-  color: gray;
-}
-
-.completed-sessions,
-.upcoming-sessions,
-.motivation {
-  margin-bottom: 40px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.completed-sessions h2,
-.upcoming-sessions h2,
-.motivation h2 {
+.progress-page h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.completed-sessions ul,
-.upcoming-sessions ul {
+.progress-page ul {
   list-style-type: none;
   padding: 0;
 }
 
-.completed-sessions li,
-.upcoming-sessions li {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.completed-sessions h3,
-.upcoming-sessions h3 {
-  margin: 0 0 5px;
-}
-
-.completed-sessions p,
-.upcoming-sessions p {
-  margin: 5px 0;
-  color: gray;
-}
-
-.motivation {
-  text-align: center;
-}
-
-.motivation blockquote {
-  font-style: italic;
+.progress-page li {
   margin: 10px 0;
-  color: #555;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.progress-page .uncompleted-sessions li {
+  background-color: rgb(214, 214, 102);
+  color: white;
+}
+
+.progress-page .completed-sessions li {
+  background-color: rgb(115, 207, 200);
+  color: black;
+}
+
+.progress-page button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.progress-page button:hover {
+  background-color: rgb(29, 116, 7);
+}
+
+.progress-page .motivation-quote {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: lightyellow;
+  border-left: 5px solid orange;
+  font-style: italic;
 }
 
 
-
+/* GroupPage styles */
 .group-page {
-  max-width: 1800px;
-  margin: 0 auto;
   padding: 20px;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .group-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .group-header h1 {
   font-size: 32px;
-  margin-bottom: 10px;
 }
 
 .group-header p {
   font-size: 16px;
-  color: gray;
+  margin-top: 10px;
 }
 
-.why-join {
-  margin: 30px 0;
-}
-
-.why-join h2 {
+.group-page h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.importance-section {
-  padding: 15px;
+.group-page input {
+  display: block;
   margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-.importance-section h3 {
-  margin: 0 0 5px;
-  font-size: 20px;
-}
-
-.importance-section p {
-  font-size: 14px;
-  color: gray;
-}
-
-.form-container {
-  margin-bottom: 30px;
-}
-
-.form-container h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.form-container input,
-.form-container textarea {
-  width: calc(100% - 20px);
   padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
-.form-container button {
-  padding: 10px 20px;
+.group-page button {
+  margin-top: 10px;
+  padding: 10px 15px;
   background-color: green;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
 }
 
-.form-container button:hover {
+.group-page button:hover {
   background-color: rgb(137, 179, 60);
 }
 
-.groups-list h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.groups-list ul {
+.group-page ul {
   list-style-type: none;
   padding: 0;
 }
 
-.groups-list li {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.groups-list h3 {
-  margin: 0 0 5px;
-}
-
-.groups-list p {
-  margin: 5px 0;
-  color: gray;
-}
-
-.join-button {
-  padding: 5px 10px;
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.join-button:hover {
-  background-color: darkblue;
-}
-
-
-
-.collaboration-page {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.collaboration-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.collaboration-header h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.collaboration-header p {
-  font-size: 16px;
-  color: gray;
-}
-
-.benefits {
-  margin: 30px 0;
-}
-
-.benefits h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.benefit-section {
+.group-page li {
+  margin: 10px 0;
   padding: 15px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  border-radius: 5px;
+  background-color: lightgray;
 }
 
-.benefit-section h3 {
-  margin: 0 0 5px;
-  font-size: 20px;
-}
-
-.benefit-section p {
-  font-size: 14px;
-  color: gray;
-}
-
-.form-container {
-  margin-bottom: 30px;
-}
-
-.form-container h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.form-container input,
-.form-container textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.form-container button {
-  padding: 10px 20px;
-  background-color: green;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.form-container button:hover {
-  background-color:rgb(137, 179, 60);
-}
-
-.collaborations-list h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.collaborations-list ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.collaborations-list li {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.collaborations-list h3 {
-  margin: 0 0 5px;
-}
-
-.collaborations-list p {
-  margin: 5px 0;
-  color: gray;
-}
-
-.join-button {
-  padding: 5px 10px;
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.join-button:hover {
-  background-color: darkblue;
+.group-page .message {
+  color: green;
+  text-align: center;
+  margin-top: 20px;
 }
 
 
-
+/* LoginPage syles */
 .login-page {
   display: flex;
   justify-content: center;
@@ -779,7 +600,7 @@ main {
   text-decoration: underline;
 }
 
-
+/* RegisterPage styles */
 .register-page {
   display: flex;
   justify-content: center;
@@ -849,5 +670,29 @@ main {
 
 .login-link a:hover {
   text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  margin: 10px 0;
+}
+
+.success-message {
+  color: green;
+  margin: 10px 0;
+}
+
+.sessions-list button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sessions-list button:hover {
+  background-color: darkred;
 }
 

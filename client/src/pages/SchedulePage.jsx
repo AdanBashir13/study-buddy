@@ -1,16 +1,53 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addSession } from '../store/progressSlice';
+import { isAuthenticated } from '../auth';
 
 const SchedulePage = () => {
-    const [sessions, setSessions] = useState([]);
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
     const [title, setTitle] = useState('');
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
 
-    const handleAddSession = () => {
-        setSessions([...sessions, { title, date, time }]);
-        setTitle('');
-        setDate('');
-        setTime('');
+    // Check if the user is authenticated, redirect to login if not
+    useEffect(() => {
+        if (!isAuthenticated()) {
+            navigate('/login');
+        }
+    }, [navigate]);
+
+    // Function to handle adding a new study session
+    const handleAddSession = async () => {
+        try {
+            const response = await fetch('/api/study-schedules', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                },
+                body: JSON.stringify({ title, date, time })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                // Dispatch the action to add the session to the Redux store
+                dispatch(addSession(data.session));
+                setSuccessMessage('Study session added successfully!');
+                setTitle('');
+                setDate('');
+                setTime('');
+                setTimeout(() => {
+                    navigate('/progress');
+                }, 2000); // Redirect to progress page after 2 seconds
+            } else {
+                console.error('Failed to add session');
+            }
+        } catch (error) {
+            console.error('Error during adding session:', error);
+        }
     };
 
     return (
@@ -67,23 +104,7 @@ const SchedulePage = () => {
                     onChange={(e) => setTime(e.target.value)}
                 />
                 <button onClick={handleAddSession}>Add Session</button>
-            </section>
-
-            <section className="sessions-list">
-                <h2>Upcoming Study Sessions</h2>
-                {sessions.length === 0 ? (
-                    <p>No study sessions scheduled yet.</p>
-                ) : (
-                    <ul>
-                        {sessions.map((session, index) => (
-                            <li key={index}>
-                                <h3>{session.title}</h3>
-                                <p>Date: {session.date}</p>
-                                <p>Time: {session.time}</p>
-                            </li>
-                        ))}
-                    </ul>
-                )}
+                {successMessage && <p>{successMessage}</p>}
             </section>
         </div>
     );

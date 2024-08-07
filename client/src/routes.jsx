@@ -4,7 +4,6 @@ import HomePage from './pages/HomePage';
 import SchedulePage from './pages/SchedulePage';
 import ProgressPage from './pages/ProgressPage';
 import GroupPage from './pages/GroupPage';
-import CollaborationPage from './pages/CollaborationPage';
 import LoginPage from './pages/LogInPage';
 import RegisterPage from './pages/RegisterPage';
 import ErrorPage from './pages/ErrorPage';
@@ -15,7 +14,6 @@ const AppRouter = () => (
         <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/progress" element={<ProgressPage />} />
         <Route path="/groups" element={<GroupPage />} />
-        <Route path="/collaboration" element={<CollaborationPage/>} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="*" element={<ErrorPage />} />
